@@ -1,0 +1,34 @@
+{
+  "name": "psx/http",
+  "description": "Mutable HTTP model and HTTP client implementation",
+  "keywords": ["http"],
+  "homepage": "http://phpsx.org",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Christoph Kappestein",
+      "email": "christoph.kappestein@gmail.com",
+      "homepage": "http://christoph.kappestein.com/"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "psx/uri": "^1.0",
+    "psr/log": "^1.0",
+    "psr/http-message": "^1.0",
+    "guzzlehttp/guzzle": "^6.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "PSX\\Http\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PSX\\Http\\Tests\\": "tests/"
+    }
+  }
+}

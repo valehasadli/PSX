@@ -1,0 +1,31 @@
+{
+  "name": "psx/json",
+  "description": "Read and transform JSON documents through JSON-Patch/Pointer",
+  "keywords": ["json", "patch", "pointer"],
+  "homepage": "http://phpsx.org",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Christoph Kappestein",
+      "email": "christoph.kappestein@gmail.com",
+      "homepage": "http://christoph.kappestein.com/"
+    }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "psx/record": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "PSX\\Json\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PSX\\Json\\Tests\\": "tests/"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "psx/datetime",
+  "description": "Date and time implementations which only accept RFC3339 formats",
+  "keywords": ["date", "time", "rfc3339"],
+  "homepage": "http://phpsx.org",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Christoph Kappestein",
+      "email": "christoph.kappestein@gmail.com",
+      "homepage": "http://christoph.kappestein.com/"
+    }
+  ],
+  "require": {
+    "php": ">=5.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "PSX\\DateTime\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PSX\\DateTime\\Tests\\": "tests/"
+    }
+  }
+}

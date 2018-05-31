@@ -1,0 +1,40 @@
+{
+  "name": "psx/api",
+  "description": "Parse and generate API specification formats",
+  "keywords": ["api", "specification", "raml", "swagger", "wsdl"],
+  "homepage": "http://phpsx.org",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Christoph Kappestein",
+      "email": "christoph.kappestein@gmail.com",
+      "homepage": "http://christoph.kappestein.com/"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "doctrine/annotations": "^1.3",
+    "doctrine/cache": "^1.6",
+    "nikic/php-parser": "^3.0",
+    "psx/json": "^1.0",
+    "psx/model": "^2.0",
+    "psx/cache": "^1.0",
+    "psx/schema": "^2.0",
+    "symfony/yaml": "~2.8|~3.0",
+    "twig/twig": "^2.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.6"
+  },
+  "bin": ["bin/api"],
+  "autoload": {
+    "psr-4": {
+      "PSX\\Api\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PSX\\Api\\Tests\\": "tests/"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "psx/data",
+  "description": "Data processing library to read and write POPOs in different formats",
+  "keywords": ["data", "json", "xml", "processor", "popo"],
+  "homepage": "http://phpsx.org",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Christoph Kappestein",
+      "email": "christoph.kappestein@gmail.com",
+      "homepage": "http://christoph.kappestein.com/"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "psx/datetime": "^1.0",
+    "psx/http": "^2.0",
+    "psx/json": "^1.0",
+    "psx/model": "^2.0",
+    "psx/record": "^1.0",
+    "psx/schema": "^2.0",
+    "psx/validate": "^1.0",
+    "doctrine/annotations": "^1.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "PSX\\Data\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PSX\\Data\\Tests\\": "tests/"
+    }
+  }
+}

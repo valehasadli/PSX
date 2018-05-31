@@ -1,0 +1,36 @@
+{
+  "name": "psx/sql",
+  "description": "Build complex data structures from relational databases",
+  "keywords": ["sql"],
+  "homepage": "http://phpsx.org",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Christoph Kappestein",
+      "email": "christoph.kappestein@gmail.com",
+      "homepage": "http://christoph.kappestein.com/"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "doctrine/dbal": "~2.5.0",
+    "nikic/php-parser": "^3.0",
+    "psx/record": "^1.0",
+    "symfony/console": "~2.8|~3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8",
+    "phpunit/dbunit": "^2.0",
+    "psx/cache": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PSX\\Sql\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PSX\\Sql\\Tests\\": "tests/"
+    }
+  }
+}
